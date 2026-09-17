@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+.venv/
+.env
+dist/
+*.pyc
+
+# Private working docs (requirements, planning, dev process). Not part of the submission.
+CLAUDE.md
+.claude/
+PLAN.md
+docs/brief.pdf
+docs/REQUIREMENTS.md
+docs/PROMPTS.md
+docs/[0-9][0-9]-*.md
