@@ -1,0 +1,50 @@
+@import '@fontsource-variable/plus-jakarta-sans';
+@import 'tailwindcss';
+
+@theme {
+  --color-surface: #eef1f6;
+  --color-panel: #ffffff;
+  --color-ink: #18212f;
+  --color-muted: #5b6679;
+  --color-line: #dce1ea;
+
+  --color-todo: #e0892b;
+  --color-todo-tint: #fdf1e3;
+  --color-todo-ink: #97520d;
+  --color-progress: #2f6feb;
+  --color-progress-tint: #e6eefd;
+  --color-progress-ink: #1d4fb8;
+  --color-done: #16a06a;
+  --color-done-tint: #e3f6ec;
+  --color-done-ink: #0d6b46;
+
+  --color-danger: #d14343;
+
+  --font-sans: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-progress);
+  outline-offset: 2px;
+}
+
+dialog::backdrop {
+  background: rgb(24 33 47 / 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
