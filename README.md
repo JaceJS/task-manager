@@ -34,7 +34,7 @@ root (`task-manager/`).
 **1. Database**
 
 ```bash
-git clone <repo-url> task-manager
+git clone https://github.com/JaceJS/task-manager.git task-manager
 cd task-manager
 docker compose up -d db
 ```
